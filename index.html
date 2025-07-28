@@ -1,20 +1,142 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2022.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Documents</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #333;
+            --background-color: #f9fafb;
+            --container-bg: #ffffff;
+            --section-bg: #f3f4f6;
+            --border-color: #e5e7eb;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 2rem;
+            background-color: var(--container-bg);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .link-card {
+            background-color: var(--section-bg);
+            padding: 1.5rem;
+            border-radius: 6px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            display: block;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        p {
+            margin-top: 0.5rem;
+            color: #666;
+        }
+        
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        @media (min-width: 640px) {
+            .links {
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+            }
+            
+            .link-card {
+                flex: 1;
+                max-width: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;html&gt;&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h1&gt;hello!&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+    <div class="container">
+        <h1>Legal Documents & Contact</h1>
+        
+        <p>Please review the following resources for our apps:</p>
+        
+        <div class="links">
+            <div class="link-card">
+                <a href="privacy.html">Privacy Policy</a>
+                <p>Information about how we handle your data and protect your privacy.</p>
+            </div>
+            
+            <div class="link-card">
+                <a href="terms.html">Terms and Conditions</a>
+                <p>The terms that govern your use of our applications.</p>
+            </div>
+            
+            <div class="link-card">
+                <a href="contact.html">Contact Us</a>
+                <p>Have questions or feedback? Get in touch with our team.</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 2rem; padding: 1rem; background-color: var(--section-bg); border-radius: 6px; font-size: 0.9rem;">
+            <p><strong>Note for App Developers:</strong> To pre-fill the app name in the contact form, use a URL parameter like:</p>
+            <code style="display: block; margin: 0.5rem 0; padding: 0.5rem; background-color: #e5e7eb; border-radius: 4px;">
+                <a href="contact.html?app=YourAppName" style="word-break: break-all;">contact.html?app=YourAppName</a>
+            </code>
+            <p>Example links:</p>
+            <ul style="padding-left: 1.5rem;">
+                <li><a href="contact.html?app=PhotoFinder">PhotoFinder App Support</a></li>
+                <li><a href="contact.html?app=TaskMaster">TaskMaster App Support</a></li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>© 2023-2025 Anum Mian. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
