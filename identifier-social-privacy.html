@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Identifier Apps with Community Feed</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #333;
+            --background-color: #f9fafb;
+            --container-bg: #ffffff;
+            --section-bg: #f3f4f6;
+            --border-color: #e5e7eb;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--background-color); margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 2rem; background-color: var(--container-bg); box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-radius: 8px; }
+        header { text-align: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color); }
+        h1 { color: var(--primary-color); margin-bottom: 0.5rem; }
+        h2 { color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; }
+        section { margin-bottom: 1.5rem; padding: 1.5rem; background-color: var(--section-bg); border-radius: 6px; }
+        ul { padding-left: 1.2rem; }
+        footer { text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-color); font-size: 0.9rem; color: #6b7280; }
+        a { color: var(--primary-color); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p>Identifier apps with a Community feed — by Mian Ltd</p>
+            <p>Last updated: July 11, 2026</p>
+        </header>
+
+        <section>
+            <h2>Overview</h2>
+            <p>This policy applies to our identifier apps that include the optional <b>Community</b> feed (for example Bird Identifier, Fish Identifier and similar apps that show a "Community" tab). Our apps identify things you photograph and, if you choose, let you share those identifications with other users of the same app.</p>
+            <p>Apps of ours without a Community tab are covered by our <a href="https://amian.github.io/image-privacy">standard policy</a> instead.</p>
+        </section>
+
+        <section>
+            <h2>What we collect and why</h2>
+            <ul>
+                <li><b>Photos you scan.</b> Sent to our identification service to produce the result, and stored on your device. A scanned photo is only published if you explicitly post it to the Community feed.</li>
+                <li><b>Community account.</b> When you first use the Community feed we create an <b>anonymous account</b> for you automatically (a random user ID and a generated display name — no email, password or real name required). You can optionally link Sign in with Apple or Google so your profile survives reinstalls; if you do, our authentication provider (Google Firebase) stores the email address associated with that sign-in.</li>
+                <li><b>Content you post.</b> Posts (photo, identification details, caption), comments, your display name, and any profile photo or bio you set are <b>publicly visible to other users of the same app</b>. Post images are stored on Cloudflare R2 (our image host); profile and post text is stored in Google Firebase.</li>
+                <li><b>Crash and performance data, device identifiers.</b> Collected via Google Firebase (Crashlytics, Analytics) to keep the app working and understand aggregate usage.</li>
+            </ul>
+            <p>We do <b>not</b> sell your data, show third-party ads, or share your data with third parties beyond the processors listed below.</p>
+        </section>
+
+        <section>
+            <h2>Processors we use</h2>
+            <ul>
+                <li><b>Google Firebase</b> (authentication, community database, crash reporting, analytics)</li>
+                <li><b>Cloudflare R2</b> (hosting of community images)</li>
+                <li><b>Google Gemini API</b> (image identification, including an automated safety check that flags photos unsuitable for public posting)</li>
+                <li><b>RevenueCat / Apple / Google</b> (subscription processing — we never see your payment details)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Retention &amp; deletion</h2>
+            <ul>
+                <li>Community content stays published until you delete it or delete your account.</li>
+                <li>You can delete individual posts and comments in the app at any time.</li>
+                <li><b>Account deletion is available in the app</b> (Community profile → Delete Account). It permanently removes your profile, your posts, your comments and your profile photo. See our <a href="https://amian.github.io/identifier-account-deletion">account deletion page</a> for details and a web request option.</li>
+                <li>Images belonging to deleted posts are removed from public access and purged from storage on a scheduled cleanup.</li>
+                <li>Scan history that you never post never leaves your device except for the identification request itself.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Moderation</h2>
+            <p>Community content is user-generated. We provide in-app reporting (posts, comments and users), blocking, automatic hiding of repeatedly-reported content, and we review reports daily. See the <a href="https://amian.github.io/identifier-social-terms">Community Guidelines &amp; Terms</a>.</p>
+        </section>
+
+        <section>
+            <h2>Children</h2>
+            <p>Our apps are not directed at children under 13, and the Community feed requires the app's minimum age per its store listing.</p>
+        </section>
+
+        <section>
+            <h2>Your rights &amp; contact</h2>
+            <p>Depending on your region (e.g. GDPR, CCPA) you may have rights to access, correct, delete, or port your data. The in-app account deletion covers the common case; for anything else contact us at <a href="mailto:contact@theapptor.com">contact@theapptor.com</a> and we will respond within 30 days.</p>
+        </section>
+
+        <footer>
+            <p>Mian Ltd · <a href="mailto:contact@theapptor.com">contact@theapptor.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
